@@ -8,6 +8,7 @@ namespace Joshua_Acevedo_Conway_GOL
 {
     static class Program
     {
+ 
         [STAThread]
         static void Main()
         {

@@ -136,19 +136,16 @@ namespace Joshua_Acevedo_Conway_GOL
             }
         }
 
-
-
-
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
+        // Menu Strip 1
+        //---------------File Menu Belt------------------//
+        //
+        //
+        // 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
             for (int y = 0; y < universe.GetLength(1); y++)
             {
-                // Iterate through the universe in the x, left to right
+  
                 for (int x = 0; x < universe.GetLength(0); x++)
                 {
                     universe[x, y] = false;
@@ -156,6 +153,101 @@ namespace Joshua_Acevedo_Conway_GOL
                 }
             }
         }
+        
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+
+
+        //---------------View------------------//
+        //
+        //
+        // 
+
+
+
+
+        //---------------Run------------------//
+        //
+        //
+        // 
+
+
+
+
+        //---------------Randomize------------------//
+        //
+        //
+        // 
+
+
+
+
+        //---------------Setting------------------//
+        //
+        //
+        // 
+
+
+
+
+        //---------------About------------------//
+        //
+        //
+        // 
+
+
+
+
+        // Tool Strip
+        //---------------New------------------//
+        private void newToolStripButton_Click(object sender, EventArgs e)
+        {
+            for (int y = 0; y < universe.GetLength(1); y++)
+            {
+
+                for (int x = 0; x < universe.GetLength(0); x++)
+                {
+                    universe[x, y] = false;
+                    graphicsPanel1.Invalidate();
+                }
+            }
+        }
+
+        //---------------Open------------------//
+
+
+
+        //---------------Save------------------//
+
+
+
+
+        //---------------Run------------------//
+
+
+
+
+        //---------------Pause------------------//
+
+
+
+        //---------------Next------------------//
+
+
+
+
+
+        // Context Menu Strip
+        //---------------Color------------------//
+        //
+        //
+
+        //---------------View------------------//
+        //
+        //
     }
 
 }
